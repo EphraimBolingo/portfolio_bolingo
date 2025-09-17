@@ -486,3 +486,77 @@ window.naveguerVers = naveguerVers;
 window.copierDansPressePapiers = copierDansPressePapiers;
 window.faireDefilerVers = faireDefilerVers;
 window.debuggerAnimations = debuggerAnimations;
+
+
+/* ----- Modal "Mise à jour" pour les projets non publiés ----- */
+(function(){
+  // Crée le modal si nécessaire et retourne l'élément
+  function creerModalMiseAJour() {
+    if (document.getElementById('modal-mise-a-jour')) return document.getElementById('modal-mise-a-jour');
+
+    const overlay = document.createElement('div');
+    overlay.id = 'modal-mise-a-jour';
+    overlay.className = 'modal-overlay';
+
+    overlay.innerHTML = `
+      <div class="modal-box" role="dialog" aria-modal="true" aria-labelledby="modal-miseajour-title">
+        <h3 id="modal-miseajour-title">Mise à jour en cours</h3>
+        <p>Veuillez réessayer plus tard !</p>
+        <div style="text-align:center;">
+          <button class="modal-close" aria-label="Fermer la fenêtre">OK</button>
+        </div>
+      </div>
+    `;
+
+    // fermer en cliquant en dehors du contenu
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) fermerModal();
+    });
+
+    // fermer sur escape
+    function onEsc(e){
+      if (e.key === 'Escape') fermerModal();
+    }
+    document.addEventListener('keydown', onEsc);
+
+    // méthode de fermeture
+    function fermerModal(){
+      const m = document.getElementById('modal-mise-a-jour');
+      if (!m) return;
+      m.classList.remove('visible');
+      document.body.style.overflow = '';
+      // suppression après l'animation
+      setTimeout(()=> { if (m.parentNode) m.remove(); document.removeEventListener('keydown', onEsc); }, 220);
+    }
+
+    // bouton de fermeture (sera attaché après insertion dans DOM)
+    overlay.querySelector('.modal-close').addEventListener('click', fermerModal);
+
+    document.body.appendChild(overlay);
+    // petit délai pour déclencher transition CSS
+    requestAnimationFrame(()=> overlay.classList.add('visible'));
+    document.body.style.overflow = 'hidden';
+    // focus sur bouton
+    overlay.querySelector('.modal-close').focus();
+
+    return overlay;
+  }
+
+  // Ouvre le modal (utile aussi depuis la console)
+  function ouvrirModalMiseAJour(){
+    return creerModalMiseAJour();
+  }
+
+  // Interception des clics : cible l'élément par id ou par attribut data-update
+  document.addEventListener('click', function(e){
+    const lien = e.target.closest('#lienUpdateX937, a.lien-projet[data-update="true"], a[data-disabled="true"]');
+    if (!lien) return;
+    // Empêche toute redirection (même target=_blank)
+    e.preventDefault();
+    e.stopPropagation();
+    ouvrirModalMiseAJour();
+  });
+
+  // expose pour debug si besoin
+  window.ouvrirModalMiseAJour = ouvrirModalMiseAJour;
+})();
