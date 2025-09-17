@@ -1593,8 +1593,10 @@ body {
         padding: 20px;
     }
     .theme_titre{
-      
         color: rgb(0, 166, 232);
+    }
+      .bouton-theme{
+        margin-right: 40px;
     }
     .contenu-apropos {
         grid-template-columns: 1fr;
