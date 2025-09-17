@@ -1593,8 +1593,9 @@ body {
         padding: 20px;
     }
     .theme_titre{
-          margin-left: 20px;
-        color: rgb(0, 166, 232);
+     position: relative;
+    left: 30px;
+    color: rgb(0, 166, 232);
     }
       .bouton-theme{
         margin-right: 40px;
