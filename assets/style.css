@@ -1587,12 +1587,13 @@ body {
     margin-left:60px ;
 }
     .bouton-menu-mobile {
-        display: flex;
-        margin-left: -60px;
+       display: flex;
+        margin-right: 20px;
+        margin-right: 20px;
         padding: 20px;
     }
     .theme_titre{
-        margin-left:-0px ;
+      
         color: rgb(0, 166, 232);
     }
     .contenu-apropos {
