@@ -1188,6 +1188,7 @@ body {
     font-weight: 500;
     font-size: 1.1rem;
     transition: all var(--transition-rapide);
+    margin-left: -13px;
 }
 
 .lien-contact:hover {
