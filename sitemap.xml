@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <!-- Page d'accueil -->
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>1.0</priority>
+   </url>
+
+   <!-- Pages dans le dossier "pages" -->
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/acceuil.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.9</priority>
+   </url>
+
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/apropos.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/competences.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/contact.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/experience.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+   <url>
+      <loc>https://portfolio-bolingo.pages.dev/pages/projets.html</loc>
+      <lastmod>2025-09-30</lastmod>
+      <priority>0.8</priority>
+   </url>
+
+</urlset>
