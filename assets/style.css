@@ -649,7 +649,9 @@ body {
     height: 56px;
     margin-bottom: var(--espacement-lg);
 }
-
+.paragraphe-apropos p{
+    text-align: justify;
+}
 .carte-competence h3 {
     color: var(--texte-primaire);
     margin-bottom: var(--espacement-lg);
