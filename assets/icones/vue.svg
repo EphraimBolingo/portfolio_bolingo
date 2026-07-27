@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Vue.js">
+  <circle cx="16" cy="16" r="15" fill="#ece6db"/>
+  <path fill="#9c5b3a" d="M16 7l-9 15h5l4-6.7L20 22h5L16 7z"/>
+  <path fill="#8a6f3c" opacity="0.35" d="M16 11.3L13.2 16h5.6L16 11.3z"/>
+</svg>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Dossier">
+  <path fill="#8a6f3c" d="M4 9c0-1 .8-2 2-2h6l2.5 2.5H26c1.1 0 2 .9 2 2V23c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V9z"/>
+  <path fill="#ece6db" d="M6 11.5h20V23H6z"/>
+  <path fill="#9c5b3a" opacity="0.6" d="M6 11.5h20V13H6z"/>
+</svg>
+

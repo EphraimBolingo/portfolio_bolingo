@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Ephraim Wayanga Bolingo — Développement Web & Informatique de Gestion</title>
+    <meta name="description" content="Ephraim Wayanga Bolingo conçoit des applications web et des solutions numériques fiables, à la croisée du développement web et de l'informatique de gestion." />
+    <meta name="author" content="Ephraim Wayanga Bolingo" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#F1ECE2" />
+    <link rel="canonical" href="https://ephraim-wayanga-bolingo.fr/" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Ephraim Wayanga Bolingo" />
+    <meta property="og:title" content="Ephraim Wayanga Bolingo — Développement Web & Informatique de Gestion" />
+    <meta property="og:description" content="Conception d'applications web et de solutions numériques fiables, adaptées aux besoins réels des utilisateurs et des organisations." />
+    <meta property="og:url" content="https://ephraim-wayanga-bolingo.fr/" />
+    <meta property="og:image" content="/icon.png" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Ephraim Wayanga Bolingo — Développement Web & Informatique de Gestion" />
+    <meta name="twitter:description" content="Conception d'applications web et de solutions numériques fiables." />
+    <meta name="twitter:image" content="/icon.png" />
+
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <link rel="apple-touch-icon" href="/icon.png" />
+    <link rel="preload" as="image" href="/assets/img/profil1.webp" />
+
+    <!-- Données structurées Schema.org — Person -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ephraim Wayanga Bolingo",
+        "jobTitle": "Développeur Web & Informatique de Gestion",
+        "url": "https://ephraim-wayanga-bolingo.fr/",
+        "image": "/icon.png",
+        "sameAs": []
+      }
+    </script>
+
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+
+  <body>
+    <!-- ============================================================
+         SPRITE SVG — icônes locales homogènes (stroke 1.5, 24x24)
+         ============================================================ -->
+    <svg class="svg-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+      <defs>
+        <!-- Marque — deux lignes convergentes + point d'accent -->
+        <symbol id="i-mark" viewBox="0 0 24 24">
+          <path d="M12 22V8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <path d="M12 8L20 3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+          <circle cx="12" cy="8" r="2" fill="currentColor"/>
+        </symbol>
+
+        <!-- Domaines -->
+        <symbol id="i-web" viewBox="0 0 24 24">
+          <rect x="3" y="4.5" width="18" height="15" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M3 9h18" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M6.5 7h.01M9 7h.01" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-gestion" viewBox="0 0 24 24">
+          <path d="M4 7a1 1 0 0 1 1-1h5l2 2h7a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="M8 12h8M8 15h5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- Méthode -->
+        <symbol id="i-reflect" viewBox="0 0 24 24">
+          <path d="M9 18h6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M10 21h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M12 3a6 6 0 0 0-3.5 10.9c.5.4.8 1 .9 1.6l.1.5h5l.1-.5c.1-.6.4-1.2.9-1.6A6 6 0 0 0 12 3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-design" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="m14.5 9.5-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M14.5 9.5 17 7l-2.5 2.5Z" fill="currentColor"/>
+          <circle cx="12" cy="12" r="1.4" fill="currentColor"/>
+        </symbol>
+        <symbol id="i-code" viewBox="0 0 24 24">
+          <path d="m8 8-4 4 4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="m16 8 4 4-4 4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="m13.5 6-3 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-test" viewBox="0 0 24 24">
+          <path d="M12 3 4 6v5c0 4.5 3.2 8.4 8 10 4.8-1.6 8-5.5 8-10V6l-8-3Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-gauge" viewBox="0 0 24 24">
+          <path d="M4 18a8 8 0 1 1 16 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="m12 14 5-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="12" cy="14" r="1.4" fill="currentColor"/>
+        </symbol>
+        <symbol id="i-maintain" viewBox="0 0 24 24">
+          <path d="M14.5 6.5a3.5 3.5 0 0 0-4.6 4.3l-5.2 5.2a1.7 1.7 0 0 0 2.4 2.4l5.2-5.2a3.5 3.5 0 0 0 4.3-4.6l-2 2-1.8-.4-.4-1.8 2-2Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- Tech — style unifié -->
+        <symbol id="i-html5" viewBox="0 0 24 24">
+          <path d="M4.5 3 6 19.5 12 21l6-1.5L19.5 3H4.5Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="M8 7.5h8l-.4 4.2H9.2l.2 2.4 2.6.7 2.6-.7.2-1.8" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-css3" viewBox="0 0 24 24">
+          <path d="M4.5 3 6 19.5 12 21l6-1.5L19.5 3H4.5Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="M8 7.5h8.2l-.3 3-1.4 5.1L12 16.5l-2.5-.7-.2-1.9" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-js" viewBox="0 0 24 24">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M10 9v5.5a1.5 1.5 0 0 1-3 0" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <path d="M14 9.2c.4-.5 1-.7 1.8-.7 1.2 0 2 .6 2 1.6 0 1.9-3 1.2-3 3 0 .8.7 1.4 1.8 1.4.6 0 1.1-.2 1.5-.6" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-vue" viewBox="0 0 24 24">
+          <path d="M3 5h3.5L12 17 17.5 5H21L12 21 3 5Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="M9.5 5 12 9.2 14.5 5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-php" viewBox="0 0 24 24">
+          <ellipse cx="12" cy="12" rx="9" ry="5.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M8 9.5v5M8 9.5h2a1.7 1.7 0 0 1 0 3.4H8M14 9.5v5M14 9.5h2a1.7 1.7 0 0 1 0 3.4h-2" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-mysql" viewBox="0 0 24 24">
+          <path d="M4 16c2 1 5 1 7 0s5-1 7 0" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <path d="M5 14c1.5 1 4 1 6 0s4.5-1 6 0" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round"/>
+          <ellipse cx="12" cy="9" rx="7" ry="3" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M12 6v6" stroke="currentColor" stroke-width="1.3"/>
+          <path d="m16 5 1.5-2M18 6l2-1" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-git" viewBox="0 0 24 24">
+          <circle cx="6" cy="7" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="6" cy="17" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="18" cy="12" r="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M6 9v6" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M8 7.5c5 0 8 1.5 8 4.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- Bureautique — style unifié -->
+        <symbol id="i-word" viewBox="0 0 24 24">
+          <rect x="4" y="4.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="m8 14 1.5-5L12 13l2.5-4 1.5 5" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-excel" viewBox="0 0 24 24">
+          <rect x="4" y="4.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M9 8 13 14M13 8 9 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M4.5 11.5h15M12 5v14" stroke="currentColor" stroke-width="1.2" opacity="0.5"/>
+        </symbol>
+        <symbol id="i-access" viewBox="0 0 24 24">
+          <ellipse cx="12" cy="7" rx="6.5" ry="2.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M5.5 7v10c0 1.4 2.9 2.5 6.5 2.5s6.5-1.1 6.5-2.5V7" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M5.5 12c0 1.4 2.9 2.5 6.5 2.5s6.5-1.1 6.5-2.5" stroke="currentColor" stroke-width="1.4" fill="none"/>
+        </symbol>
+        <symbol id="i-powerpoint" viewBox="0 0 24 24">
+          <rect x="4" y="4.5" width="16" height="15" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <circle cx="12" cy="12" r="3.2" stroke="currentColor" stroke-width="1.4" fill="none"/>
+          <path d="M12 12h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/>
+        </symbol>
+
+        <!-- Contact -->
+        <symbol id="i-phone" viewBox="0 0 24 24">
+          <path d="M6.5 4h2l1.2 3-1.5 1c.5 1.6 1.7 2.8 3.3 3.3l1-1.5 3 1.2v2c0 .8-.7 1.5-1.5 1.5C11 17.5 6.5 13 6.5 9c0-.8.7-1.5 1.5-1.5" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-email" viewBox="0 0 24 24">
+          <rect x="3.5" y="5.5" width="17" height="13" rx="2" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-whatsapp" viewBox="0 0 24 24">
+          <path d="M4 20l1.4-4.2A7.5 7.5 0 1 1 9 18.6L4 20Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+          <path d="M9 9.5c.3 2 2.5 4.2 4.5 4.5l1-1.2 2 .8c0 1.2-1 2.2-2.2 2.2C11.5 15.8 8.2 12.5 8 9.7 8 8.5 9 7.5 10.2 7.5l.8 2-1 1Z" stroke="currentColor" stroke-width="1.3" fill="none" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-facebook" viewBox="0 0 24 24">
+          <path d="M14.5 8.5H16V5.7c-.4 0-1.3-.2-2.4-.2-2 0-3.4 1.2-3.4 3.4v1.6H8v2.8h2.2V21h2.8v-7.7h2.2l.4-2.8h-2.6V9.2c0-.5.2-.7.9-.7Z" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-linkedin" viewBox="0 0 24 24">
+          <rect x="3.5" y="3.5" width="17" height="17" rx="2.5" stroke="currentColor" stroke-width="1.5" fill="none"/>
+          <path d="M7 10v6M7 7v.01M11 16v-3.5a1.5 1.5 0 0 1 3 0V16M11 16v-6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24">
+          <path d="M9 19c-3.5.8-3.5-1.7-5-2m10 3v-3.2c0-1 .2-1.4-.4-2 2-.2 4-1 4-4.3 0-1-.3-1.7-.8-2.3.1-.2.4-1.1-.2-2.3 0 0-.8-.2-2.7 1a9.4 9.4 0 0 0-5 0C6.7 4.2 6 4.4 6 4.4c-.6 1.2-.3 2.1-.2 2.3-.5.6-.8 1.4-.8 2.3 0 3.3 2 4.1 4 4.3-.4.3-.5.8-.4 1.5V20" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- Actions -->
+        <symbol id="i-arrow-down" viewBox="0 0 24 24">
+          <path d="M12 4v16m0 0-6-6m6 6 6-6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-download" viewBox="0 0 24 24">
+          <path d="M12 4v12m0 0 5-5m-5 5-5-5M5 20h14" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+        <symbol id="i-arrow-right" viewBox="0 0 24 24">
+          <path d="M4 12h16m0 0-6-6m6 6-6 6" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+        </symbol>
+
+        <!-- Filets décoratifs du portrait -->
+        <symbol id="i-corner-tl" viewBox="0 0 44 44">
+          <path d="M2 16V2h14" stroke="currentColor" stroke-width="1.5" fill="none" stroke-linecap="round"/>
+          <circle cx="2" cy="2" r="2" fill="currentColor"/>
+        </symbol>
+        <symbol id="i-corner-br" viewBox="0 0 60 60">
+          <path d="M44 58H58V44" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round"/>
+          <path d="M50 58h8v-8" stroke="currentColor" stroke-width="1" fill="none" stroke-linecap="round" opacity="0.6"/>
+        </symbol>
+      </defs>
+    </svg>
+
+    <!-- ============================================================
+         HEADER — navigation minimaliste
+         ============================================================ -->
+    <header class="site-header" data-reveal="fade">
+      <div class="site-header__inner">
+        <a href="/" class="brand" aria-label="Ephraim Wayanga Bolingo — accueil">
+          <svg class="brand__mark" width="22" height="22" aria-hidden="true" focusable="false"><use href="#i-mark"/></svg>
+          <span class="brand__name">Ephraim Wayanga Bolingo</span>
+        </a>
+
+        <nav class="nav" aria-label="Navigation principale">
+          <a class="nav__link" href="about.html">Parcours</a>
+          <a class="nav__link" href="about.html#cv">CV</a>
+          <a class="nav__link" href="#contact">Contact</a>
+        </nav>
+
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Ouvrir le menu">
+          <span class="nav-toggle__bars" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Menu mobile -->
+    <div class="mobile-menu" id="mobile-menu" role="dialog" aria-modal="true" aria-label="Menu de navigation">
+      <a href="about.html">Parcours</a>
+      <a href="about.html#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <main id="top">
+      <!-- ============================================================
+           HERO
+           ============================================================ -->
+      <section class="hero" aria-labelledby="hero-title">
+        <span class="hero__rule hero__rule--left" aria-hidden="true"></span>
+        <span class="hero__rule hero__rule--right" aria-hidden="true"></span>
+
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="eyebrow hero__eyebrow" data-hero="up" data-delay="120">
+              <span class="dot" aria-hidden="true"></span>
+              Portfolio — 2026
+            </p>
+
+            <h1 class="hero__name" id="hero-title" data-hero="left" data-delay="220">
+              <span class="ln">Ephraim</span>
+              <span class="ln">Wayanga</span>
+              <span class="ln">Bolingo</span>
+            </h1>
+
+            <p class="hero__role" data-hero="left" data-delay="360">
+              <em>Développement Web</em> &amp; <em>compétences en gestion</em> — conception d'applications web et de solutions numériques.
+            </p>
+
+            <p class="hero__desc" data-hero="up" data-delay="480">
+              Compétences techniques et qualités en gestion au service de solutions fiables, fonctionnelles et adaptées aux besoins réels des utilisateurs, des organisations et des processus métiers.
+            </p>
+
+            <div class="hero__actions" data-hero="up" data-delay="620">
+              <a class="btn btn--primary" href="about.html">
+                Découvrir le parcours
+                <svg class="btn__icon" aria-hidden="true" focusable="false"><use href="#i-arrow-right"/></svg>
+              </a>
+              <a class="btn btn--ghost btn--download" href="about.html#cv">
+                <svg class="btn__icon" aria-hidden="true" focusable="false"><use href="#i-download"/></svg>
+                Télécharger le CV
+              </a>
+            </div>
+          </div>
+
+          <figure class="portrait" data-hero="right" data-delay="300">
+            <svg class="portrait__mark portrait__mark--tl" aria-hidden="true" focusable="false"><use href="#i-corner-tl"/></svg>
+            <div class="portrait__frame">
+              <img
+                class="portrait__img"
+                src="/assets/img/profil1.webp"
+                alt="Portrait d'Ephraim Wayanga Bolingo"
+                width="420" height="525"
+                fetchpriority="high" />
+            </div>
+            <svg class="portrait__mark portrait__mark--br" aria-hidden="true" focusable="false"><use href="#i-corner-br"/></svg>
+            <figcaption class="portrait__caption">Conception &amp; développement</figcaption>
+          </figure>
+        </div>
+
+        <a class="hero__scroll" href="#domaines" aria-label="Faire défiler vers les domaines d'expertise">
+          <span>Domaines</span>
+          <span class="hero__scroll-line" aria-hidden="true"></span>
+        </a>
+      </section>
+
+      <!-- ============================================================
+           DOMAINES D'EXPERTISE — deux univers qui se rejoignent
+           ============================================================ -->
+      <section class="section" id="domaines" aria-labelledby="domaines-title">
+        <div class="container">
+          <header class="section-head" data-reveal="up">
+            <p class="eyebrow eyebrow--line">Domaines d'expertise</p>
+            <h2 id="domaines-title">Deux approches, une même valeur</h2>
+            <p class="lead">Le développement web et les compétences en gestion se renforcent : l’un apporte la technique, l’autre apporte l’organisation et la rigueur nécessaires pour transformer un besoin métier en solution numérique opérationnelle.</p>
+          </header>
+
+          <div class="domains">
+            <article class="domain" data-reveal="left" data-delay="0">
+              <svg class="domain__icon" aria-hidden="true" focusable="false"><use href="#i-web"/></svg>
+              <h3 class="domain__title">Développement Web</h3>
+              <ul class="domain__list">
+                <li>Sites web et applications web</li>
+                <li>Interfaces modernes et responsives</li>
+                <li>Bases de données simples et fiables</li>
+                <li>Fonctionnalités métier sur mesure</li>
+              </ul>
+            </article>
+
+            <div class="domains__node" data-reveal="fade" data-delay="120" aria-hidden="true">
+              <span class="domains__node-line"></span>
+              <svg class="domains__node-mark" aria-hidden="true" focusable="false"><use href="#i-mark"/></svg>
+              <span class="domains__node-label">Se rejoignent</span>
+              <span class="domains__node-line"></span>
+            </div>
+
+            <article class="domain" data-reveal="right" data-delay="200">
+              <svg class="domain__icon" aria-hidden="true" focusable="false"><use href="#i-gestion"/></svg>
+              <h3 class="domain__title">Compétences en gestion</h3>
+              <ul class="domain__list">
+                <li>Processus administratifs structurés</li>
+                <li>Organisation et gestion de l'information</li>
+                <li>Gestion documentaire et flux métier</li>
+                <li>Accompagnement d’équipe, rigueur et concentration</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           COMPÉTENCES — par catégorie, SVG homogènes
+           ============================================================ -->
+      <section class="section section--night" id="competences" aria-labelledby="competences-title">
+        <div class="container">
+          <header class="section-head section-head--center" data-reveal="up">
+            <p class="eyebrow eyebrow--line" style="margin-inline:auto">Compétences</p>
+            <h2 id="competences-title">Un outillage cohérent, par rôle</h2>
+          </header>
+
+          <div class="grid grid--2">
+            <div class="skill-group" data-reveal="left" data-delay="0">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Frontend</h3>
+                <span class="skill-group__count">03</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/html.svg" alt="" aria-hidden="true" width="20" height="20" />HTML5</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/css.svg" alt="" aria-hidden="true" width="20" height="20" />CSS3</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/js.svg" alt="" aria-hidden="true" width="20" height="20" />JavaScript</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal="right" data-delay="80">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Framework</h3>
+                <span class="skill-group__count">01</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/vuejs.svg" alt="" aria-hidden="true" width="20" height="20" />Vue.js</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal="left" data-delay="160">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Backend</h3>
+                <span class="skill-group__count">01</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/php.svg" alt="" aria-hidden="true" width="20" height="20" />PHP</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal="right" data-delay="240">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Base de données</h3>
+                <span class="skill-group__count">01</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/mysql.svg" alt="" aria-hidden="true" width="20" height="20" />MySQL</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal="left" data-delay="320">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Gestion de versions</h3>
+                <span class="skill-group__count">02</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/git.svg" alt="" aria-hidden="true" width="20" height="20" />Git</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/github.svg" alt="" aria-hidden="true" width="20" height="20" />GitHub</span>
+              </div>
+            </div>
+
+            <div class="skill-group" data-reveal="right" data-delay="400">
+              <div class="skill-group__head">
+                <h3 class="skill-group__title">Bureautique</h3>
+                <span class="skill-group__count">04</span>
+              </div>
+              <div class="skills">
+                <span class="skill"><img class="skill__icon" src="/assets/img/word.svg" alt="" aria-hidden="true" width="20" height="20" />Word</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/excel.svg" alt="" aria-hidden="true" width="20" height="20" />Excel</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/access.svg" alt="" aria-hidden="true" width="20" height="20" />Access</span>
+                <span class="skill"><img class="skill__icon" src="/assets/img/powerpoint.svg" alt="" aria-hidden="true" width="20" height="20" />PowerPoint</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           MÉTHODE DE TRAVAIL
+           ============================================================ -->
+      <section class="section" id="methode" aria-labelledby="methode-title">
+        <div class="container">
+          <header class="section-head" data-reveal="up">
+            <p class="eyebrow eyebrow--line">Méthode de travail</p>
+            <h2 id="methode-title">Une démarche en six temps</h2>
+            <p class="lead">Chaque étape a son rôle. Aucune n'est ajoutée pour la forme. L'objectif reste le même : livrer une solution qui dure.</p>
+          </header>
+
+          <div class="method">
+            <article class="method__step" data-reveal="up" data-delay="0">
+              <span class="method__num">01</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-reflect"/></svg>
+              <h3 class="method__title">Réflexion</h3>
+              <p class="method__text">Comprendre le besoin, le contexte et les contraintes avant d'écrire la moindre ligne.</p>
+            </article>
+            <article class="method__step" data-reveal="up" data-delay="80">
+              <span class="method__num">02</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-design"/></svg>
+              <h3 class="method__title">Conception</h3>
+              <p class="method__text">Structurer l'information, anticiper les parcours et définir l'architecture.</p>
+            </article>
+            <article class="method__step" data-reveal="up" data-delay="160">
+              <span class="method__num">03</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-code"/></svg>
+              <h3 class="method__title">Développement</h3>
+              <p class="method__text">Coder proprement, à la main, en privilégiant la lisibilité et la maintenabilité.</p>
+            </article>
+            <article class="method__step" data-reveal="up" data-delay="240">
+              <span class="method__num">04</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-test"/></svg>
+              <h3 class="method__title">Tests</h3>
+              <p class="method__text">Vérifier chaque comportement et corriger avant la mise en production.</p>
+            </article>
+            <article class="method__step" data-reveal="up" data-delay="320">
+              <span class="method__num">05</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-gauge"/></svg>
+              <h3 class="method__title">Optimisation</h3>
+              <p class="method__text">Sobriété du code, performances et accessibilité, sans surenchère technique.</p>
+            </article>
+            <article class="method__step" data-reveal="up" data-delay="400">
+              <span class="method__num">06</span>
+              <svg class="method__icon" aria-hidden="true" focusable="false"><use href="#i-maintain"/></svg>
+              <h3 class="method__title">Maintenance</h3>
+              <p class="method__text">Assurer le suivi, faire évoluer et garder la solution fiable dans le temps.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           RÉALISATIONS — quatre projets, compositions variées
+           ============================================================ -->
+      <section class="section section--night" id="realisations" aria-labelledby="realisations-title">
+        <div class="container">
+          <header class="section-head" data-reveal="up">
+            <p class="eyebrow eyebrow--line">Réalisations</p>
+            <h2 id="realisations-title">Quatre projets, quatre contextes</h2>
+            <p class="lead">Travaux privés, présentés pour illustrer une démarche. Aucun lien externe.</p>
+          </header>
+
+          <div class="works">
+            <article class="work" data-reveal="left">
+              <figure class="work__media">
+                <span class="work__index">01 / Salon</span>
+                <img src="/assets/img/salon.webp" alt="Aperçu du site web pour un salon de coiffure" loading="lazy" width="640" height="400" />
+              </figure>
+              <div class="work__body">
+                <p class="eyebrow">Site vitrine</p>
+                <h3 class="work__title">Salon de coiffure</h3>
+                <p class="work__desc">Présentation des services, identité visuelle soignée, galerie et prise de contact.</p>
+                <div class="work__tech" aria-label="Technologies utilisées">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work work--reverse" data-reveal="right">
+              <figure class="work__media">
+                <span class="work__index">02 / Cuisine</span>
+                <img src="/assets/img/restau.webp" alt="Aperçu du site consacré à la cuisine africaine" loading="lazy" width="640" height="400" />
+              </figure>
+              <div class="work__body">
+                <p class="eyebrow">Site thématique</p>
+                <h3 class="work__title">Cuisine africaine</h3>
+                <p class="work__desc">Mise en valeur des spécialités culinaires, navigation intuitive et expérience utilisateur soignée.</p>
+                <div class="work__tech" aria-label="Technologies utilisées">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>MySQL</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work" data-reveal="left">
+              <figure class="work__media">
+                <span class="work__index">03 / E-commerce</span>
+                <img src="/assets/img/site_ecom.webp" alt="Aperçu du site e-commerce" loading="lazy" width="640" height="400" />
+              </figure>
+              <div class="work__body">
+                <p class="eyebrow">Interface de vente</p>
+                <h3 class="work__title">Site e-commerce</h3>
+                <p class="work__desc">Catalogue de produits, interface de vente moderne et organisation claire du contenu.</p>
+                <div class="work__tech" aria-label="Technologies utilisées">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP</span><span>MySQL</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="work work--reverse" data-reveal="right">
+              <figure class="work__media">
+                <span class="work__index">04 / Location</span>
+                <img src="/assets/img/dev.jpg" alt="Aperçu de l'application de location" loading="lazy" width="640" height="400" />
+              </figure>
+              <div class="work__body">
+                <p class="eyebrow">Application web</p>
+                <h3 class="work__title">Application de location</h3>
+                <p class="work__desc">Gestion des annonces, consultation des offres et interface pensée pour une utilisation simple.</p>
+                <div class="work__tech" aria-label="Technologies utilisées">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Vue.js</span><span>PHP</span><span>MySQL</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============================================================
+           CONTACT — minimaliste, liens générés par JS
+           ============================================================ -->
+      <section class="section" id="contact" aria-labelledby="contact-title">
+        <div class="container contact">
+          <div class="contact__text" data-reveal="left">
+            <p class="eyebrow eyebrow--line">Contact</p>
+            <h2 id="contact-title">Parlons de votre projet</h2>
+            <p>Une question, une mission ou un échange professionnel. Les canaux ci-contre restent à disposition.</p>
+          </div>
+
+          <ul class="contact__channels" aria-label="Canaux de contact" data-reveal="right">
+            <li class="channel" data-contact="phone">
+              <a href="#" aria-label="Téléphone">
+                <img class="channel__icon" src="/assets/img/telephone.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">Téléphone</span>
+              </a>
+            </li>
+            <li class="channel" data-contact="email">
+              <a href="#" aria-label="Adresse e-mail">
+                <img class="channel__icon" src="/assets/img/gmail.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">E-mail</span>
+              </a>
+            </li>
+            <li class="channel" data-contact="whatsapp">
+              <a href="#" aria-label="WhatsApp">
+                <img class="channel__icon" src="/assets/img/whatsapp.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">WhatsApp</span>
+              </a>
+            </li>
+            <li class="channel" data-contact="linkedin">
+              <a href="#" aria-label="LinkedIn">
+                <img class="channel__icon" src="/assets/img/linkedin.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">LinkedIn</span>
+              </a>
+            </li>
+            <li class="channel" data-contact="facebook">
+              <a href="#" aria-label="Facebook">
+                <img class="channel__icon" src="/assets/img/facebook.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">Facebook</span>
+              </a>
+            </li>
+            <li class="channel" data-contact="github">
+              <a href="#" aria-label="GitHub">
+                <img class="channel__icon" src="/assets/img/github.svg" alt="" aria-hidden="true" width="22" height="22" />
+                <span class="sr-only">GitHub</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ============================================================
+         FOOTER
+         ============================================================ -->
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <p class="site-footer__sig">Ephraim Wayanga Bolingo <span>·</span> Développement Web &amp; Informatique de Gestion</p>
+        <nav class="site-footer__links" aria-label="Pied de page">
+          <a href="about.html">Parcours</a>
+          <a href="about.html#cv">CV</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <p class="site-footer__year">© <span data-year>2026</span></p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/env.js"></script>
+    <script type="module" src="/assets/js/script.js"></script>
+  </body>
+</html>

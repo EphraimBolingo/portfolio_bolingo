@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" role="img" aria-label="Microsoft Word">
+  <rect width="32" height="32" rx="4" fill="#2b4d6e"/>
+  <rect x="6.5" y="8" width="19" height="16" rx="1.5" fill="#f4efe6"/>
+  <rect x="6.5" y="8" width="4.5" height="16" rx="1.5" fill="#1f3a55"/>
+  <path d="M13 14l1.5 6 1.7-6h1.4l1.7 6 1.5-6h1.2l-2.1 8h-1.3l-1.6-5.6L16.3 22H15l-2.1-8H13z" fill="#2b4d6e"/>
+</svg>
