@@ -303,8 +303,11 @@
         return;
       }
 
-      const href = buildContactHref(key, value);
-      anchor.setAttribute("href", href);
+      const existingHref = anchor.getAttribute("href");
+      if (!existingHref || existingHref === "#") {
+        const href = buildContactHref(key, value);
+        anchor.setAttribute("href", href);
+      }
       anchor.setAttribute("target", "_blank");
       anchor.setAttribute("rel", "noopener noreferrer");
 
